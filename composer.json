@@ -1,0 +1,20 @@
+{
+  "name": "yonh/dir-iterator",
+  "description": "目录迭代器",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "yonh",
+      "email": "azssjli@163.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require-dev": {
+    "phpunit/phpunit": "4.8.35"
+  },
+  "autoload": {
+    "classmap": [
+      "src/"
+    ]
+  }
+}
