@@ -8,7 +8,7 @@
       "email": "azssjli@163.com"
     }
   ],
-  "minimum-stability": "stable",
+  "minimum-stability": "dev",
   "require-dev": {
     "phpunit/phpunit": "4.8.35"
   },
