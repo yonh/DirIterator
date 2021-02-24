@@ -7,12 +7,12 @@
  *
  * 一个简单的例子, 遍历当前目录,并输出所有.php的文件,首先你得有个处理类EchoPHPFileNameHandle
  * // 调用示例
- * $handle = new EchoPHPFileNameHandle();
+ * $handler = new EchoPHPFileNameHandler();
  * $iter = new DirIterator();
- * $iter->addHandle($handle);
+ * $iter->addHandler($handler);
  * $iter->iterator(__DIR__);
  *
- * class EchoPHPFileNameHandle implements DirIteratorHandle
+ * class EchoPHPFileNameHandle implements DirIteratorHandler
  * {
  *     public function handle($spl)
  *     {
@@ -37,7 +37,7 @@ class DirIterator
      */
     private function handle($spl)
     {
-        /** @var DirIteratorHandle $handle */
+        /** @var DirIteratorHandler $handle */
         foreach ($this->handleList as $handle) {
             $handle->handle($spl);
         }
@@ -62,9 +62,9 @@ class DirIterator
     }
 
     /**
-     * @param $handle DirIteratorHandle
+     * @param $handle DirIteratorHandler
      */
-    public function addHandle($handle)
+    public function addHandler($handle)
     {
         $this->handleList[] = $handle;
     }

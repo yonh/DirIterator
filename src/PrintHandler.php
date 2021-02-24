@@ -6,7 +6,7 @@
  * Date: 17-5-24
  * Time: 下午7:12
  */
-class PrintHandle implements DirIteratorHandle
+class PrintHandler implements DirIteratorHandler
 {
 
     /**

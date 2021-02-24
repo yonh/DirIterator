@@ -6,7 +6,7 @@
  * Date: 17-5-24
  * Time: 下午7:09
  */
-interface DirIteratorHandle
+interface DirIteratorHandler
 {
     /**
      * @param $spl SplFileInfo */
